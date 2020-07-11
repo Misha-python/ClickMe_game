@@ -33,7 +33,7 @@ function calcApproachSpeed (prevCursorPos, curCursorPos,
 }
 
 function proverka() {
-    console.log(calcApproachSpeed (prevCursorPos, curCursorPos, prevButtonPos, curButtonPos, curTime - prevTime));
+    buttonObj.innerHTML = calcApproachSpeed (prevCursorPos, curCursorPos, prevButtonPos, curButtonPos, curTime - prevTime));
     
 }
 
