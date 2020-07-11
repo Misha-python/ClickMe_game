@@ -18,3 +18,7 @@
 .button:hover{
     background-color: #ff8888;
 }
+
+.button:selected{
+    border-style: solid;
+}
