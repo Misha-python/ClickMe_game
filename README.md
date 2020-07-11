@@ -1,2 +1,3 @@
-# ClickMe_game
-Simple brouser Game
+# ClickMe!
+###### game
+Simple brouser _game_
