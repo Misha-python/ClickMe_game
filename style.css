@@ -1,0 +1,20 @@
+.button {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border-style: none;
+    background-color: #888;
+
+    position: absolute;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
+
+    transition-property: all; /* Трансформирующиеся параметры: все */
+    transition-duration: 0.125s; /* Время */
+    transition-timing-function: linear;
+    transition-delay: 0ms; /* Задержка */
+}
+
+.button:hover{
+    background-color: #ff8888;
+}
