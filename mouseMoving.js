@@ -4,6 +4,8 @@ var windowHeight = document.documentElement.clientHeight,
     buttonObj = document.getElementById ('button'),
     curButtonPos = [Number (getComputedStyle (buttonObj).height.slice (0, -2)), 
                     Number (getComputedStyle (buttonObj).width.slice (0, -2))],
+    htmlTagObj = document.getElementById ('html')
+
     prevButtonPos = curButtonPos
     prevCursorPos = [0, 0],
     curCursorPos = [0, 0],
@@ -33,10 +35,12 @@ function calcApproachSpeed (prevCursorPos, curCursorPos,
 }
 
 function proverka() {
-    buttonObj.innerHTML = calcApproachSpeed (prevCursorPos, curCursorPos, prevButtonPos, curButtonPos, curTime - prevTime));
+    console.log(calcApproachSpeed (prevCursorPos, curCursorPos, prevButtonPos, curButtonPos, curTime - prevTime));
     
 }
 
 setInterval(() => {
     proverka ()
 }, 100);
+
+htmlTagObj.onmousemove = eventHundler
